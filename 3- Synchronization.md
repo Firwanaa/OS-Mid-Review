@@ -1,6 +1,6 @@
 ###### 1-If the current value of counter = 5, what are its possible values if the producer and consumer processes run concurrently?
 - The possible values, if both the consumer and producer processes run concurrently, are 5, 6, or 7.
-- 5, 6 and 7
+- 4, 5 and 6
 ###### 2- What is the term for describing the situation where shared data may be manipulated concurrently and the outcome of the execution depends upon the order of access?
 - Race Condition
 
