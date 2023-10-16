@@ -1,5 +1,5 @@
 ###### 1-If the current value of counter = 5, what are its possible values if the producer and consumer processes run concurrently?
-- The possible values, if both the consumer and producer processes run concurrently, are 5, 6, or 7.
+- ~~The possible values, if both the consumer and producer processes run concurrently, are 5, 6, or 7.
 - 4, 5 and 6
 ###### 2- What is the term for describing the situation where shared data may be manipulated concurrently and the outcome of the execution depends upon the order of access?
 - Race Condition
@@ -46,7 +46,8 @@
 - Signal()
 
 ###### 15- Name at least one modern programming language that has incorporated the idea of a monitor
-- Java 
+- Java
+- C#
 
 ###### 16- Race conditions are possible in many computer systems. Consider an online auction system where the current highest bid for each item must be maintained. A person who wishes to bid on an item calls the bid(amount) function, which compares the amount being bid to the current highest bid. If the amount exceeds the current highest bid, the highest bid is set to the new amount. This is illustrated below:
 
@@ -81,9 +82,10 @@ To prevent the race condition, you can use synchronization mechanisms such as mu
 sem_t bidSemaphore;
 
 // Initialize the semaphore
-sem_init(&bidSemaphore, 0, 1);
+
 
 void bid(double amount) {
+sem_init(&bidSemaphore, 0, 1);
     // Wait until the semaphore is available
     sem_wait(&bidSemaphore);
 

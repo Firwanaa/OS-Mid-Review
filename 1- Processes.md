@@ -60,7 +60,7 @@ The output of this program at LINE A will be 5. The child process updates only i
 - Stack
 - Heap
 - Data
-- Text
+- Text (text)
 
 ###### 12- Provide at least three possible states a process may be in.
 - New
