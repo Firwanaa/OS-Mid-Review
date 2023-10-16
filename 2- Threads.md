@@ -29,9 +29,9 @@
 ###### 6-As we discussed Google’s Chrome browser and its practice of opening each new tab in a separate process. Would the same benefits have been achieved if, instead, Chrome had been designed to open each new tab in a separate thread? Explain. 
 
 ###### 7- Consider the following code segment:
-
+![](Pasted%20image%2020231015203408.png)
 a. How many unique processes are created?
- - 5 unique processes
+ - 6 unique processes
 b. How many unique threads are created?
 - 2 unique threads will be created.
 
